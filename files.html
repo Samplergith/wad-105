@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Experision Using javascript</title>
+	<script type="text/javascript">
+		function myFunc(argument) {
+			var userinput = document.getElementById('std_name').value;
+			var re =/^L1((F)||(S))[0-9]{2}[A-Z]{4}[0-9]{4}((@UCP.EDU.PK)||(@ucp.edu.pk))$/;
+			if (userinput.search(re)==-1) {
+				alert("invaild Expersion");
+			}else{
+				alert("valid Expersion");
+			}
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="std_name" placeholder="Enter your Name">
+<button onclick="myFunc();">Check My Expersion</button>
+</body>
+</html>
